@@ -1,7 +1,6 @@
 import { NativeBaseProvider } from "native-base";
 import React from "react"
 import { StyleSheet, Text, View, PanResponder } from 'react-native';
-import {StyleSheet, Text, View } from 'react-native';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import Matches from "./dashboard_screens/matches";
 import Settings from "./dashboard_screens/settings";

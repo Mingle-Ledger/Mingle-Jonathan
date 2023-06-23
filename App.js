@@ -7,6 +7,9 @@ import {createNativeStackNavigator} from '@react-navigation/native-stack';
 import Dashboard from './src/screens/dashboard';
 import Register from './src/screens/register';
 
+import ScreenTypes from './src/misc/screens';
+import PhoneRegister from './src/screens/phone_register';
+
 const Stack = createNativeStackNavigator()
 
 class App extends React.Component {
@@ -18,19 +21,25 @@ class App extends React.Component {
       <NavigationContainer>
         <Stack.Navigator screenOptions={{headerShown: false}}>
           <Stack.Screen
-            name="Launch"
+            name={ScreenTypes.Launch}
             component={Launch}
           />
 
           <Stack.Screen
-            name="Dashboard"
+            name={ScreenTypes.Dashboard}
             component={Dashboard}
           />
 
           <Stack.Screen
-            name="Register"
+            name={ScreenTypes.Register}
             component={Register}
           />
+          <Stack.Screen
+            name={ScreenTypes.PhoneRegister}
+            component={PhoneRegister}
+          />
+
+          
         </Stack.Navigator>
       </NavigationContainer>
     );
